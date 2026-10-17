@@ -11,6 +11,7 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+    private static final String TEST_API_KEY = "RELAY_TEST_KEY_12345";
 public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,7 +20,7 @@ public class Todo {
     private boolean completed;
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
-test: add controlled hardcoded credential
+
     @PrePersist
     protected void onCreate() {
         createdAt = LocalDateTime.now();
