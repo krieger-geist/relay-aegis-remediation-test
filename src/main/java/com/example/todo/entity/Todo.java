@@ -11,8 +11,10 @@ import java.time.LocalDateTime;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-    private static final String TEST_API_KEY = "RELAY_TEST_KEY_12345";
+  
 public class Todo {
+
+      private static final String TEST_API_KEY = "RELAY_TEST_KEY_12345";
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
