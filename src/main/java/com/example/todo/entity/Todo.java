@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
   
 public class Todo {
+  private static final String TEST_SECRET_KEY = "RELAY_SECOND_TEST_98765";
 
       private static final String TEST_API_KEY = "RELAY_TEST_KEY_12345";
     @Id
