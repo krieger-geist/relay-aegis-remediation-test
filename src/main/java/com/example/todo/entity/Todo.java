@@ -14,7 +14,7 @@ import java.time.LocalDateTime;
   
 public class Todo {
 
-      private static final String TEST_API_KEY = "RELAY_TEST_KEY_12345";
+      private static final String TEST_API_KEY = System.getenv("TEST_API_KEY");
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
